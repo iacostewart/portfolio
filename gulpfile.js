@@ -18,22 +18,19 @@ gulp.task('serve', function () {
     gulp.watch("*.html").on("change", reload);
 });
 
-// gulp.task('sass', function () {
-//     return gulp.src('scss/main.scss')
-//         .pipe(sass()) // Converts Sass to CSS with gulp-sass
-//         .pipe(gulp.dest('css'))
-// });
 
+
+// Compiles SCSS files from /scss into /css
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
     return gulp.src('scss/main.scss')
-      .pipe(sass())
-     
+      .pipe(sass())     
       .pipe(gulp.dest('css'))
       .pipe(browserSync.reload({
         stream: true
       }))
   });
+
 
 
 // Runs sass & serve methods. Watches for changes and reloads. 
