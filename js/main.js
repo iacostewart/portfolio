@@ -1,24 +1,37 @@
 /* General jQuery & JS stuff goes here. */
 
-console.log("A starter template created by Eleven Fifty Academy under MIT Licensing.");
-
-// Setting up the Variables
-var bars = document.getElementById("nav-action");
-var nav = document.getElementById("nav");
+jQuery(document).ready(function ($) {
 
 
-//setting up the listener
-bars.addEventListener("click", barClicked, false);
+  console.log("A starter template created by Eleven Fifty Academy under MIT Licensing.");
+
+  // Initialize wowjs 
+  new WOW().init();
 
 
-//setting up the clicked Effect
-function barClicked() {
-  bars.classList.toggle('active');
-  nav.classList.toggle('visible');
-}
+  /*-------------------
+  MAGNIFICO STARTER - 
+  Code from a starter example by the creator. 
+  https://codepen.io/dimsemenov/pen/hutrb
+  -------------------*/
+  $('.with-caption').magnificPopup({
+      type: 'image',
+      closeBtnInside: false,
+      mainClass: 'mfp-with-zoom mfp-img-mobile',
 
- // Initialize wowjs 
- new WOW().init();
+      image: {
+          verticalFit: true,
+          titleSrc: function (item) {
+              //More could be done here......
+              //Also doesn't fit so good on iPad.
+              var caption = item.el.attr('title');
+              return caption;
+          }
+      },
 
-
- 
+      //This will let us click through images eventually....
+      gallery: {
+          enabled: true
+      },
+  });
+});
