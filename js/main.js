@@ -17,3 +17,8 @@ function barClicked() {
   nav.classList.toggle('visible');
 }
 
+ // Initialize wowjs 
+ new WOW().init();
+
+
+ 
