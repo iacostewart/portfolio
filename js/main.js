@@ -49,3 +49,7 @@ function barClicked() {
   bars.classList.toggle('active');
   nav.classList.toggle('visible');
 }
+
+
+/*<script src=“https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js“></script>*/
+/*<link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css“*/

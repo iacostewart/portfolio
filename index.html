@@ -15,13 +15,14 @@
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
+    <link href="" rel="stylesheet" type="text/css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Belleza' rel='stylesheet'>
-    <link href="" rel="stylesheet" type="text/css">
+    
 
     <!-- Custom styles for this template -->
+    <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css“>
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -110,44 +111,97 @@
         </div>
     </Div>
 
-        <div class="projectdown">
+    <div class="projectdown">
         <div class="row">
-            <div class="col-md-4 project1"></div>
-            <div class="col-md-4 project2"></div>
-            <div class="col-md-4 project5"></div>
-        </div>
-        <div class="row">  <a name="projects"></a>
-            <div class="col-md-4 project3"></div>
-            <div class="col-md-4 project4">
-                
-            </div>
-            <div class="col-md-4 project6"></div>
+            <div class="col-md-4 project1 cssmonster"><button class="btn btn-lg"><a href="https://iacostewart.github.io/CSS-Monster/.">CSSMonster</a></button></div>
+        
+        
+            <div class="col-md-4 project3"><button class="btn btn-lg"><a href="https://iacostewart.github.io/ForRealFinalStore/.">WebPage</a></button></div>
         </div>
     </div>
+      
+        <!-- <div class="projectdown">
+        <div class="row">
+            <div class="col-md-4 project1 cssmonster"><a href=""><img src="./assets/img/monster.png" alt=""></a></div>
+            <div class="col-md-4 project2 "><a href=""><img src="" alt=""></a></div>
+            <div class="col-md-4 project5"><a href=""><img src="" alt=""></a></div>
+        </div>
+        <div class="row">  <a name="projects"></a>
+            <div class="col-md-4 project3"><a href=""><img src="./assets/img/Webp.net-resizeimage.png" alt=""></a></div>
+            <div class="col-md-4 project4"><a href=""><img src="" alt=""></a></div>
+                
+            
+            <div class="col-md-4 project6"><a href=""><img src="" alt=""></a></div>
+        </div>
+    </div> -->
+    
 
-
-        <form class="contactform"><a name="contact"></a>
+        <form class="contactform" method="POST" action="https://formspree.io/iacostewart@msn.com"><a name="contact"></a>
                 
                         <div class="form-group col-md-4">
                           <label for="exampleFormControlInput1">Name</label>
-                          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="john doe" required>
+                          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="john doe">
                         </div>
                         <div class="form-group col-md-8">
                           <label for="exampleFormControlInput1 required">Email</label>
-                          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John@doe.com">
+                          <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email">
                         </div>
                           
                    
                         
                         
                         <div class="form-group col"> 
-                          <label for="exampleFormControlTextarea1">Example textarea</label>
+                          <label for="exampleFormControlTextarea1" name="message" Placeholder="Your Message" ></label>
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                           <input class="btn btn-primary" type="submit" value="Submit">
                         </div>
                         
         </form>
-    
+    </style>
+    <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-centered">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" >
+                                <h3>Contact Me</h3>
+                            </div>
+                        <form action="https://formspree.io/iacostewart@msn.com" method="POST" class="contactform">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user blue"></i></span>
+                                    <input type="text" name="InputName" placeholder="Name" class="form-control" autofocus="autofocus" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope blue"></i></span>
+                                    <input type="email" name="email" name="InputEmail" placeholder="Your email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-phone blue"></i></span>
+                                    <input type="number" name="InputCno" placeholder="Phone" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-comment blue"></i></span>
+                                    <textarea name="InputMessage" name="message" rows="6" class="form-control" placeholder="Your message" type="text" required ></textarea>
+                                </div>
+                            </div>
+                            <div class="">
+                            <button type="submit" class="btn btn-info pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+                                <button type="reset" value="Reset" name="reset" class="btn">Reset <span class="glyphicon glyphicon-refresh"></span></button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
 
         <!--Footer-->
 <footer class="page-footer stylish-color-dark">
@@ -177,7 +231,7 @@
 
         <div class="row py-3 d-flex align-items-center">
 
-            <!--Grid column-->q
+            <!--Grid column-->
             
 
             <!--Grid column-->
@@ -204,6 +258,7 @@
 </footer>
 <!--/.Footer-->
 </div>
+<script src=“https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js“></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
